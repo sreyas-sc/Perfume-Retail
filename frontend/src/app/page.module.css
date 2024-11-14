@@ -291,6 +291,13 @@
   margin-top: 50px;
 }
 
+.cartSummary{
+  /* background-color: #666; */
+  padding: 10px;
+  /* background-color: white; */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  border-radius: 10px;
+}
 .collectionLeft {
   width: 100%;
   margin-bottom: 20px;

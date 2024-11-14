@@ -53,12 +53,15 @@ const Page = () => {
     };
 
     // Stores the cart items in the local storage.
+
     const setStoredCartItems = (items: CartItem[]) => {
         if (typeof window === 'undefined') return;
+        // Store the cart items in the local storage.
         
         try {
             localStorage.setItem('cartItems', JSON.stringify(items));
         } catch (error) {
+            // Log an error if there was an issue storing the cart items.
             console.error('Error writing to localStorage:', error);
         }
     };
@@ -199,7 +202,6 @@ const Page = () => {
                             <span><img src="/assets/icons/person.png" alt="" /></span>
                         </div>
                     </div>
-                {/* </div> */}
             </nav>
 
             <div className={styles.mainContentWrapper}>
