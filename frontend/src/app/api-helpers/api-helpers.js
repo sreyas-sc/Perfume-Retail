@@ -2,7 +2,7 @@ import axios from 'axios';
 export const getAllPerfumes = async () => {
     // console.log("get all perfume!!!!!!!!!!!!!!!! from helpers");
     try {
-      const res = await axios.get(`http://localhost:5000/perfume`);
+      const res = await axios.get(`https://review-38wx.onrender.com/perfume`);
   
       if (res.status !== 200) {
         console.log("No Data");
@@ -40,7 +40,7 @@ export const addToCart = async (cartItems = [], perfume) => {
   try {
     console.log("Updated Cart: ", updatedCart);
     // Send updated cart to the server
-    const res = await axios.post(`http://localhost:5000/cart`, 
+    const res = await axios.post(`https://review-38wx.onrender.com/cart`, 
       { items: updatedCart },
       {
         headers: {

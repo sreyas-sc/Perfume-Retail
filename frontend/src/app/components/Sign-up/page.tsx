@@ -16,7 +16,7 @@ const SignUp = () => {
     try {
       // Axios post request to sign up
       console.log('Signing up...');
-      const response = await axios.post('http://localhost:5000/user/signup', {
+      const response = await axios.post('https://review-38wx.onrender.com/user/signup', {
         name,
         email,
         password,
